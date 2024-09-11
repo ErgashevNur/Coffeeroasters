@@ -1,0 +1,11 @@
+@mixin global {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+%btn {
+  border: 0;
+  padding: 15px 31px;
+  border-radius: 5px;
+}
