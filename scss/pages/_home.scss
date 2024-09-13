@@ -1,3 +1,5 @@
+// navigation
+
 .header-menu {
   display: flex;
   justify-content: space-between;
@@ -41,6 +43,8 @@ nav {
   top: 0;
   right: 0;
 }
+
+// header
 
 .hero {
   background-image: url(../img/home/desktop/image-hero-coffeepress.jpg);
@@ -140,6 +144,11 @@ nav {
   padding: 0 20px;
 }
 
+.creative {
+  height: 820px;
+  padding-bottom: 100px;
+}
+
 .text-size__title {
   font-family: "Fraunces";
   font-weight: 900;
@@ -200,6 +209,73 @@ nav {
   margin-top: 24px;
 }
 
+// section third
+
+.how-it {
+  margin-top: 100px;
+}
+
+.how-it__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+  font-family: "Fraunces";
+  color: $grey;
+  margin-bottom: 80px;
+}
+
+.steps {
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2px;
+  background-color: $pale-orange;
+
+  span {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-color: #fff;
+    border: 2px solid $dark-cyan;
+    border-radius: 50%;
+  }
+}
+
+.how-it__content__boxes {
+  display: flex;
+  gap: 95px;
+  margin-top: 67px;
+  margin-bottom: 64px;
+}
+
+.number {
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 900;
+  font-family: "Fraunces";
+  color: $pale-orange;
+}
+
+.how-it__content__box__title {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 900;
+  font-family: "Fraunces";
+  color: $dark-grey-blue;
+  width: 255px;
+  margin-top: 38px;
+  margin-bottom: 42px;
+}
+
+.how-it__content__box__description {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Barlow";
+  width: 285px;
+}
+
 @media screen and (max-width: 1160px) {
   .box-small {
     max-width: 320px;
@@ -222,6 +298,18 @@ nav {
 
   .box-text__title:nth-child(3) {
     margin-top: 65px;
+  }
+
+  .collection-cards {
+    gap: 13px;
+  }
+
+  .collection-box__img {
+    width: 200px;
+  }
+
+  .collection-text {
+    width: 200px;
   }
 }
 
@@ -297,6 +385,33 @@ nav {
     margin-bottom: 40px;
     font-size: 15px;
     line-height: 25px;
+  }
+
+  .collection-main {
+    height: 1050px;
+    margin-top: 120px;
+    padding-bottom: 72px;
+  }
+
+  .collection-cards {
+    flex-direction: column;
+  }
+
+  .collection-box {
+    text-align: left;
+    flex-direction: row;
+  }
+
+  .collection-text {
+    width: 282px;
+  }
+
+  .collection-text__title {
+    margin-top: 0px;
+  }
+
+  .backpage {
+    margin-top: 72px;
   }
 }
 
@@ -406,6 +521,39 @@ nav {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .collection-main {
+    height: 1580px;
+    margin-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .collection-cards {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .collection-box__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .collection-box {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .collection-text {
+    width: 282px;
+  }
+
+  .collection-text__title {
+    margin-top: 24px;
+  }
+
+  .backpage {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -415,5 +563,36 @@ nav {
 
   .burger-menu {
     width: 19px;
+  }
+
+  .hero-content__title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .hero-content__description {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .hero-content__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .hero-content__description {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 15px 25px;
   }
 }
