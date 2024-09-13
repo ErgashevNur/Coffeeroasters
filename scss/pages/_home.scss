@@ -1,0 +1,419 @@
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  padding: 44px 0;
+}
+
+.header-menu__links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 12px;
+  line-height: 0.8;
+  letter-spacing: 0.92px;
+  font-weight: 700;
+  font-family: "Barlow";
+}
+
+.header-menu__link {
+  color: $grey;
+}
+
+.header-menu__link:hover {
+  color: #000;
+}
+
+.burger-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.burger-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hero {
+  background-image: url(../img/home/desktop/image-hero-coffeepress.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 11.7rem 8.5rem;
+}
+
+.hero-content__title {
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 900;
+  font-family: "Fraunces";
+  max-width: 49.3rem;
+  color: $light-cream;
+  margin-bottom: 32px;
+}
+
+.hero-content__description {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Barlow";
+  max-width: 39.5rem;
+  color: $light-cream;
+  opacity: 80%;
+  margin-bottom: 56px;
+}
+
+// section first
+
+.collection-main {
+  background-image: url(../img/home/desktop/our-collection.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 560px;
+  margin-top: 116px;
+  padding-bottom: 100px;
+  box-sizing: content-box;
+}
+.collection-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  top: 150px;
+}
+
+.collection-box__img {
+  width: 255px;
+}
+
+.collection-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.collection-text {
+  width: 255px;
+}
+
+.collection-text__title {
+  font-size: 24px;
+  line-height: 32px;
+  color: $dark-grey-blue;
+  font-family: "Fraunces";
+  font-weight: 900;
+  margin-top: 71.55px;
+}
+
+.collection-text__description {
+  font-size: 16px;
+  line-height: 26px;
+  color: $dark-grey-blue;
+  font-family: "Barlow";
+  font-weight: 400;
+  margin-top: 24px;
+}
+
+// section second
+
+.creative {
+  padding-bottom: 100px;
+}
+
+.backpage {
+  background-color: $dark-grey-blue;
+  background-image: url(../img/plan/desktop/bg-steps.png);
+  background-size: cover;
+  border-radius: 8px;
+  height: 577px;
+  margin-top: 100px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.text-size__title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0 auto;
+  color: $light-cream;
+  padding-top: 100px;
+}
+
+.text-size__description {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 80%;
+  color: $light-cream;
+  max-width: 540px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 86px;
+}
+
+.boss-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box-small {
+  max-width: 350px;
+  padding: 72px 48px 48px 48px;
+  border-radius: 8px;
+  background-color: $dark-cyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box-text__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+  font-family: "Fraunces";
+  color: $light-cream;
+  margin-top: 56px;
+}
+
+.box-text__description {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Barlow";
+  color: $light-cream;
+  width: 255px;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 1160px) {
+  .box-small {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .box-small {
+    max-width: 280px;
+    padding: 70px 20px 20px 20px;
+  }
+
+  .box-text__description {
+    width: 220px;
+  }
+
+  .box-text__title {
+    font-size: 20px;
+  }
+
+  .box-text__title:nth-child(3) {
+    margin-top: 65px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .box-small {
+    max-width: 240px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .boss-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-small {
+    max-width: 573px;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 41px 48px 41px 70px;
+  }
+
+  .text-size__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .text-size__description {
+    font-size: 15px;
+    line-height: 25px;
+    padding-bottom: 70px;
+  }
+
+  .box-text {
+    margin-left: 55px;
+  }
+
+  .box-text__title {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .box-text__description {
+    margin-top: 16px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .backpage {
+    height: 573px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .hero {
+    background-image: url(../img/home/tablet/image-hero-coffeepress.jpg);
+    background-position: center;
+    padding: 10.4rem 5.8rem;
+  }
+
+  .hero-content__title {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 48px;
+    max-width: 329px;
+  }
+
+  .hero-content__description {
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .header-menu__links {
+    display: none;
+  }
+
+  .header-menu {
+    align-items: center;
+  }
+
+  .burger-menu {
+    display: block;
+    width: 29px;
+  }
+
+  .burger-button {
+    position: relative;
+    top: -8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .boss-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-small {
+    max-width: 279px;
+    width: 100%;
+    height: 382px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 72px 12px 48px 12px;
+  }
+
+  .text-size__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .text-size__description {
+    font-size: 15px;
+    line-height: 25px;
+    padding-bottom: 70px;
+  }
+
+  .box-text {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-text__title {
+    margin-top: 55px;
+    text-align: left;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .box-text__description {
+    margin-top: 16px;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+  }
+
+  .backpage {
+    height: 902px;
+    background-image: url(../img/plan/mobile/bg-order-summary.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero {
+    background-image: url(../img/home/mobile/image-hero-coffeepress.jpg);
+    background-position: center;
+    padding: 10rem 2.4rem;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content__title {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 40px;
+    max-width: 279px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-content__description {
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 279px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    width: 180px;
+  }
+
+  .burger-menu {
+    width: 19px;
+  }
+}

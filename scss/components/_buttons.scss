@@ -1,0 +1,19 @@
+.btn {
+  padding: 15px 31px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: $dark-cyan;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 900;
+  font-family: "Fraunces";
+  color: $light-cream;
+}
+
+.btn:hover {
+  background-color: $dark-cyan-hover;
+}
+
+.btn:active {
+  background-color: #e2dedb;
+}
