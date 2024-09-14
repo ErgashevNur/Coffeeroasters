@@ -118,6 +118,7 @@ h6 {
 .about__header {
   background-image: url(../img/about/desktop/image-hero-whitecup.jpg);
   background-size: cover;
+  background-position: center;
   padding: 137px 85px;
   border-radius: 10px;
 }
@@ -150,8 +151,13 @@ h6 {
 }
 
 .commitment-section__picture {
-  width: 445px;
+  max-width: 445px;
   border-radius: 10px;
+}
+
+.commitment-text__title {
+  font-size: 32px;
+  line-height: 40px;
 }
 
 .commitment-text__title {
@@ -257,6 +263,62 @@ h6 {
   list-style: circle;
 }
 
+@media screen and (max-width: 980px) {
+  .commitment-text__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .commitment-text__description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .commitment-content {
+    gap: 69px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 769px) {
+  .commitment-content {
+    flex-direction: column;
+  }
+  .commitment-text__title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  .about__header__active__title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .about__header__active__description {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .about__header {
+    background-image: url(../img/about/mobile/bg-header.jpg);
+    padding: 111px 24px 87px 24px;
+  }
+  .about__header__active__description {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .commitment-section {
+    margin: 0 25px;
+  }
+  .commitment-section__picture {
+    max-width: 380px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .commitment-section {
+    margin: 0 25px;
+  }
+  .commitment-section__picture {
+    max-width: 300px;
+  }
+}
 .header-menu {
   display: flex;
   justify-content: space-between;
@@ -744,6 +806,9 @@ footer {
   }
   .logo-footer {
     flex-direction: column;
+  }
+  footer {
+    padding: 47px 50px;
   }
 }
 @media screen and (max-width: 660px) {

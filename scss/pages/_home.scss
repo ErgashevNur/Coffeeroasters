@@ -536,6 +536,10 @@ footer {
   .logo-footer {
     flex-direction: column;
   }
+
+  footer {
+    padding: 47px 50px;
+  }
 }
 
 @media screen and (max-width: 660px) {
