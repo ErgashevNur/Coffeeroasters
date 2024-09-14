@@ -1,0 +1,147 @@
+.about__header {
+  background-image: url(../img/about/desktop/image-hero-whitecup.jpg);
+  background-size: cover;
+  padding: 137px 85px;
+  border-radius: 10px;
+}
+
+.about__header__active__title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: $light-cream;
+}
+
+.about__header__active__description {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 445px;
+  color: $light-cream;
+  margin-top: 24px;
+}
+
+// section first
+
+.commitment-content {
+  display: flex;
+  align-items: center;
+  padding: 0 85px;
+  gap: 125px;
+  margin-top: 168px;
+  margin-bottom: 258px;
+}
+
+.commitment-section__picture {
+  width: 445px;
+  border-radius: 10px;
+}
+
+.commitment-text__title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: $dark-grey-blue;
+}
+
+.commitment-text__description {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 540px;
+  color: $grey;
+  margin-top: 32px;
+}
+
+// section second
+
+.quality-content {
+  display: flex;
+  border-radius: 10px;
+  background-color: $dark-grey-blue;
+  background-image: url(../img/about/desktop/bg-quality.png);
+  padding: 88px 85px 176px 85px;
+  position: relative;
+}
+
+.quality-content__picture {
+  position: absolute;
+  top: -90px;
+  left: 670px;
+  border-radius: 10px;
+}
+
+.quality-text {
+  max-width: 540px;
+}
+
+.quality-text__title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: $light-cream;
+}
+
+.quality-text__description {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 540px;
+  color: $grey;
+  margin-top: 32px;
+}
+
+// section third
+
+.headquarters {
+  margin-top: 168px;
+  margin-bottom: 168px;
+}
+
+.headquarters__box {
+  padding-left: 135px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+
+.cards__box {
+  max-width: 285px;
+  width: 100%;
+}
+
+.cards__box__title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: $dark-grey-blue;
+  margin-top: 46px;
+  margin-bottom: 24px;
+}
+
+.address {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $grey;
+}
+
+.phone-number {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $grey;
+  list-style: circle;
+}
