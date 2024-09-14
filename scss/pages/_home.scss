@@ -213,6 +213,7 @@ nav {
 
 .how-it {
   margin-top: 100px;
+  padding-bottom: 100px;
 }
 
 .how-it__title {
@@ -225,7 +226,8 @@ nav {
 }
 
 .steps {
-  width: 760px;
+  width: 65%;
+  max-width: 765px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -236,9 +238,9 @@ nav {
     display: inline-block;
     width: 31px;
     height: 31px;
-    background-color: #fff;
-    border: 2px solid $dark-cyan;
     border-radius: 50%;
+    border: 2px solid $dark-cyan;
+    background-color: #fff;
   }
 }
 
@@ -276,9 +278,106 @@ nav {
   width: 285px;
 }
 
+// footer
+
+footer {
+  background-color: $dark-grey-blue;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  padding: 47px 85px 42px 85px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-footer {
+  display: flex;
+  column-gap: 102.9px;
+  align-items: center;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 33px;
+}
+
+.footer-menu__list a {
+  color: $grey;
+  font-weight: 700;
+  font-family: "Barlow";
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.92px;
+}
+
+.social-icon a {
+  margin-right: 24px;
+}
+
+.social-icon path:hover {
+  fill: $pale-orange;
+}
+
+//
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+
+  .commitment-section,
+  .quality-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .commitment-text,
+    .quality-text {
+      h2 {
+        font-size: 2rem;
+        color: #333;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #666;
+      }
+    }
+  }
+
+  .quality-section {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+
+    .quality-text {
+      h2 {
+        color: #fff;
+      }
+
+      p {
+        color: #ccc;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1160px) {
   .box-small {
     max-width: 320px;
+  }
+
+  .how-it__content__boxes {
+    gap: 50px;
   }
 }
 
@@ -311,11 +410,27 @@ nav {
   .collection-text {
     width: 200px;
   }
+
+  .how-it__content__boxes {
+    gap: 30px;
+  }
+
+  footer {
+    padding: 47px 50px 47px 85px;
+  }
 }
 
 @media screen and (max-width: 930px) {
   .box-small {
     max-width: 240px;
+  }
+
+  .how-it__content__boxes {
+    gap: 18px;
+  }
+
+  .how-it__content__box__description {
+    width: 230px;
   }
 }
 
@@ -365,6 +480,62 @@ nav {
   .backpage {
     height: 573px;
   }
+
+  .how-it__content__boxes {
+    flex-direction: column;
+    text-align: center;
+    gap: 56px;
+  }
+
+  .how-it__content__box__title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 327px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+  }
+
+  .how-it__content__box__description {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 327px;
+  }
+
+  .steps {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .creative {
+    height: 980px;
+  }
+
+  .how-it__title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .last-section-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-footer {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 65px;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -412,6 +583,10 @@ nav {
 
   .backpage {
     margin-top: 72px;
+  }
+
+  .logo-footer {
+    flex-direction: column;
   }
 }
 
@@ -491,6 +666,10 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .creative {
+    height: 1499px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -554,6 +733,31 @@ nav {
   .backpage {
     margin-top: 60px;
   }
+
+  .footer-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icon {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-social {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  footer {
+    padding: 40px 30px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -594,5 +798,9 @@ nav {
   .btn {
     font-size: 13px;
     padding: 15px 25px;
+  }
+
+  .logo-svg {
+    width: 180px;
   }
 }
