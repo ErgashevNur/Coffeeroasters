@@ -223,6 +223,12 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 870px) {
   .plan-page__content__box p {
     max-width: 200px;
@@ -293,12 +299,25 @@
   .steps-second-clone {
     display: none;
   }
+
+  .options {
+    flex-direction: column;
+  }
+
+  .content h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 @media screen and (max-width: 560px) {
   .plan__header {
     background-image: url(../img/plan/mobile/image-hero-blackcup.jpg);
     padding: 100px 24px;
+  }
+
+  .option {
+    text-align: center;
   }
 }
 
@@ -311,6 +330,12 @@
 @media screen and (max-width: 390px) {
   .how-it-clone__content {
     height: 1300px;
+  }
+
+  .content h2 {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
   }
 }
 
