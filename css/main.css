@@ -434,6 +434,15 @@ h6 {
     line-height: 20px;
   }
 }
+@media screen and (max-width: 360px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .quality-content {
+    padding: 176px 25px 50px 25px;
+  }
+}
 .plan__header {
   background-image: url(../img/plan/desktop/image-hero-blackcup.jpg);
   background-size: cover;
@@ -1426,6 +1435,11 @@ footer {
 @media screen and (max-width: 440px) {
   footer {
     padding: 40px 30px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .creative {
+    height: 1600px;
   }
 }
 @media screen and (max-width: 400px) {

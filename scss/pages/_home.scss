@@ -720,6 +720,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 430px) {
+  .creative {
+    height: 1600px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .logo {
     width: 180px;
