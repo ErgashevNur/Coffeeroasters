@@ -1,0 +1,320 @@
+// header
+
+.plan__header {
+  background-image: url(../img/plan/desktop/image-hero-blackcup.jpg);
+  background-size: cover;
+  padding: 134px 85px;
+  border-radius: 10px;
+}
+
+.about__header__active__description {
+  opacity: 80%;
+}
+
+// section first
+
+.how-it-clone__content {
+  background-color: $dark-grey-blue;
+  background-image: url(../img/plan/desktop/bg-steps.png);
+  max-width: 1280px;
+  height: 653px;
+  padding: 100px 85px 99px 85px;
+  border-radius: 10px;
+}
+
+.steps-second-clone {
+  width: 65%;
+  max-width: 765px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2px;
+  background-color: $pale-orange;
+
+  .span__plan-page {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px solid $dark-cyan;
+    background-color: transparent;
+  }
+}
+
+.plan-page__content__boxes {
+  display: flex;
+}
+
+.plan-page__content__box h3 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 900;
+  font-family: "Fraunces";
+  color: $light-cream;
+  max-width: 200px;
+  margin-top: 38px;
+  margin-bottom: 42px;
+}
+
+.plan-page__content__box p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Barlow";
+  max-width: 250px;
+  color: $light-cream;
+  opacity: 80%;
+}
+
+.how-it {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.steps {
+  width: 65%;
+  max-width: 765px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2px;
+  background-color: $pale-orange;
+
+  span {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px solid $dark-cyan;
+    background-color: #fff;
+  }
+}
+
+.plan-page__content__boxes {
+  display: flex;
+  gap: 50px;
+  margin-top: 67px;
+  margin-bottom: 64px;
+}
+
+// section second
+
+.selection-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 120px;
+}
+
+.menu__active {
+  padding: 10px 0;
+  font-weight: 900;
+  font-family: "Fraunces";
+  font-size: 24px;
+  line-height: 32px;
+  color: $grey;
+  cursor: pointer;
+}
+
+.menu__active:hover {
+  color: $dark-cyan;
+}
+
+.menu__active:active {
+  color: $grey;
+}
+
+.content h2 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: $grey;
+  margin-bottom: 56px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 88px;
+  gap: 23px;
+}
+
+.option {
+  background-color: #f3f3f3;
+  padding: 32px 28px 84px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.option h3 {
+  font-family: "Fraunces";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  color: $dark-grey-blue;
+  margin-bottom: 24px;
+}
+
+.option p {
+  font-family: Barlow;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $grey;
+  max-width: 172px;
+}
+
+.option:hover {
+  background-color: $pale-orange;
+}
+
+@media screen and (max-width: 1200px) {
+  .plan__header {
+    background-image: url(../img/plan/tablet/image-hero-blackcup.jpg);
+    padding: 127px 58px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .plan-page__content__boxes {
+    display: flex;
+    gap: 30px;
+    margin-top: 67px;
+    margin-bottom: 64px;
+  }
+
+  .plan-page__content__box h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .plan-page__content__box p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .plan-page__content__boxes {
+    display: flex;
+    gap: 15px;
+    margin-top: 67px;
+    margin-bottom: 64px;
+  }
+
+  .plan-page__content__box h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .plan-page__content__box p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .how-it-clone__content {
+    padding: 97px 39px 70px 40px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .plan-page__content__box p {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .how-it__content__boxes {
+    flex-direction: row;
+    text-align: center;
+    gap: 56px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .plan__header {
+    background-image: url(../img/plan/tablet/image-hero-blackcup.jpg);
+    padding: 127px 58px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .plan-page__content__box p {
+    max-width: 165px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .plan-page__content__boxes {
+    flex-direction: column;
+  }
+
+  .plan-page__content__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .steps-second-clone {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .how-it-clone__content {
+    height: 1200px;
+  }
+
+  .plan-page__content__boxes {
+    gap: 50px;
+  }
+
+  .how-it-clone__content {
+    background-image: url(../img/plan/mobile/bg-steps.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .plan-page__content__box h3 {
+    max-width: 300px;
+  }
+
+  .plan-page__content__box p {
+    max-width: 350px;
+  }
+
+  .steps-second-clone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .plan__header {
+    background-image: url(../img/plan/mobile/image-hero-blackcup.jpg);
+    padding: 100px 24px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .plan-page__content__box p {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .how-it-clone__content {
+    height: 1300px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .plan-page__content__box p {
+    max-width: 130px;
+  }
+
+  .how-it-clone__content {
+    height: 1450px;
+  }
+}
