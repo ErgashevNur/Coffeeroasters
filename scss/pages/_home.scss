@@ -543,6 +543,10 @@ footer {
 }
 
 @media screen and (max-width: 660px) {
+  .hero {
+    margin-top: 40px;
+  }
+
   .header-menu__links {
     display: none;
   }
