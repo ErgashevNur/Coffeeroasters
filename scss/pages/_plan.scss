@@ -145,6 +145,7 @@
   padding: 32px 28px 84px 28px;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .option h3 {
@@ -167,6 +168,10 @@
 
 .option:hover {
   background-color: $pale-orange;
+}
+
+.option.active {
+  background-color: $dark-cyan;
 }
 
 @media screen and (max-width: 1200px) {

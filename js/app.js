@@ -11,3 +11,7 @@ burgerButtonBtn.addEventListener("click", () => {
     burgerMenuEl.src = "./img/shared/mobile/icon-hamburger.svg";
   }
 });
+
+function toggleActive(element) {
+  element.classList.toggle("active");
+}
