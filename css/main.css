@@ -602,6 +602,31 @@ h6 {
   background-color: #0e8784;
 }
 
+.order-summary {
+  background-color: #333d4b;
+  color: #ffffff;
+  padding: 27px 64px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.order-summary p {
+  font-family: "Fraunces";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: left;
+}
+
+.coffee {
+  color: #0e8784;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: end;
+}
+
 @media screen and (max-width: 1200px) {
   .plan__header {
     background-image: url(../img/plan/tablet/image-hero-blackcup.jpg);
@@ -721,6 +746,23 @@ h6 {
   }
   .option {
     text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .order-summary {
+    padding: 27px 30px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+  .order-summary p {
+    font-family: "Fraunces";
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 29px;
+    text-align: center;
+  }
+  .btn-box {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 370px) {
