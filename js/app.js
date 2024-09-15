@@ -6,9 +6,9 @@ burgerButtonBtn.addEventListener("click", () => {
   hiddenNavEl.classList.toggle("show-nav");
   document.body.classList.toggle("overflow-toggle");
   if (document.body.classList.contains("overflow-toggle")) {
-    burgerMenuEl.src = "./img/shared/mobile/icon-close.svg";
+    burgerMenuEl.src = "../img/shared/mobile/icon-close.svg";
   } else {
-    burgerMenuEl.src = "./img/shared/mobile/icon-hamburger.svg";
+    burgerMenuEl.src = "../img/shared/mobile/icon-hamburger.svg";
   }
 });
 
